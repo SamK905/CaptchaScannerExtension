@@ -1,0 +1,39 @@
+{
+  "background": {
+    "scripts": [ "scripts/jquery.min.js", "scripts/genlib.js", "scripts/chromereload.js", "scripts/background.js" ]
+  },
+  "version": "5.0.5",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/OCR.jpeg",
+      "32": "images/OCR.jpeg",
+      "48": "images/OCR.jpeg",
+      "128": "images/OCR.jpeg"
+    },
+    "default_title": "__MSG_appName__"
+  },
+  "default_locale": "en",
+  "description": "__MSG_appDescription__",
+  "icons": {
+      "16": "images/OCR.jpeg",
+      "32": "images/OCR.jpeg",
+      "48": "images/OCR.jpeg",
+      "128": "images/OCR.jpeg"
+  },
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "storage",
+    "notifications",
+    "nativeMessaging",
+    "clipboardRead"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab":true
+  },
+  "short_name": "__MSG_appShortName__",
+  "web_accessible_resources": [ "message-dialog.html","dialog.html", "config/config.json", "images/gear.png", "images/outside.png", "images/close.png","images/translate.png","images/deepl.jpg","images/copyfish-32.png"]
+}
